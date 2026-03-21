@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctors | HealViaUs</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/doctors.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+    <header class="navbar">
+
+        <!-- LOGO (HOME LINK) -->
+        <a href="index.html" class="logo">
+            <img src="../images/logo.png" alt="HealViaUs Logo">
+            <span>HealViaUs</span>
+        </a>
+
+        <!-- NAV LINKS -->
+        <nav class="nav-links">
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- CTA BUTTON -->
+        <div class="nav-btn">
+            <a href="appointment.html" class="book-btn">
+                Book Appointment
+                <span class="material-icons icon-circle">event</span>
+            </a>
+        </div>
+
+    </header>
+
+
+<!-- MAIN SECTION -->
+<section class="doctors-page">
+
+    <!-- LEFT FILTER -->
+    <aside class="filters">
+
+        <h3>Filters</h3>
+
+        <!-- SPECIALTY -->
+<p class="filter-title">Specialty</p>
+<label><input type="checkbox" value="cardio" onchange="applyFilter()"> Cardiologist</label>
+<label><input type="checkbox" value="dentist" onchange="applyFilter()"> Dentist</label>
+<label><input type="checkbox" value="pediatric" onchange="applyFilter()"> Pediatrician</label>
+<label><input type="checkbox" value="ortho" onchange="applyFilter()"> Orthopedic</label>
+<label><input type="checkbox" value="neuro" onchange="applyFilter()"> Neurologist</label>
+<label><input type="checkbox" value="general" onchange="applyFilter()"> General</label>
+
+
+<!-- RATING -->
+<p class="filter-title">Rating</p>
+<label><input type="checkbox" value="4.5" onchange="applyFilter()"> 4.5+ ⭐</label>
+<label><input type="checkbox" value="4.8" onchange="applyFilter()"> 4.8+ ⭐</label>
+
+
+<!-- LOCATION -->
+<p class="filter-title">Location</p>
+<label><input type="checkbox" value="Colombo" onchange="applyFilter()"> Colombo</label>
+<label><input type="checkbox" value="Kandy" onchange="applyFilter()"> Kandy</label>
+<label><input type="checkbox" value="Galle" onchange="applyFilter()"> Galle</label>
+<label><input type="checkbox" value="Jaffna" onchange="applyFilter()"> Jaffna</label>
+<label><input type="checkbox" value="Negombo" onchange="applyFilter()"> Negombo</label>
+
+    </aside>
+
+
+    <!-- RIGHT CONTENT -->
+    <div class="doctor-content">
+
+        <h2>Our Doctors</h2>
+
+        <div id="doctor-list" class="doctor-grid"></div>
+            <!-- JS will load doctors here -->
+
+    </div>
+
+</section>
+
+
+<!-- JS -->
+<script src="../javascript/appointment.js"></script>
+
+</body>
+</html>

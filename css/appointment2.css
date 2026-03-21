@@ -1,0 +1,369 @@
+:root {
+    /* PRIMARY TEAL GRADIENT */
+    --primary-dark: #1f6f78;
+    --primary-main: #2c8c94;
+    --primary-light: #6fc3c9;
+
+    /* BACKGROUND */
+    --bg-white: #ffffff;
+    --bg-light: #f8fbfb;
+    --bg-card: #eaf4f5;
+
+    /* TEXT */
+    --text-dark: #1a1a1a;
+    --text-medium: #6b7c85;
+    --text-light: #ffffff;
+
+    /* ACCENTS */
+    --accent-blue: #3aa6b9;
+
+    /* SHADOW */
+    --shadow-soft: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-light);
+}
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark); /* FIXED for light bg */
+    letter-spacing: 0.5px;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 50px;
+    justify-self: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-medium); /* FIXED */
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.nav-links a:hover {
+    color: var(--primary-main); /* NICE subtle hover */
+}
+
+/* ACTIVE */
+.nav-links .active {
+    color: var(--primary-main);
+    border-bottom: 2px solid var(--primary-main);
+    padding-bottom: 5px;
+}
+
+/* BUTTON WRAPPER */
+.nav-btn {
+    justify-self: end;
+}
+
+/* BOOK BUTTON (NO GREEN ✅) */
+.book-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--primary-main); /* THEME COLOR */
+    color: var(--text-light);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* HOVER */
+.book-btn:hover {
+    transform: translateY(-2px);
+    background: var(--primary-dark);
+}
+
+/* ICON (NO GREEN ANYMORE ✅) */
+.icon-circle {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.booking-container{
+    max-width:900px;
+    margin:80px auto;
+    padding:20px;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.booking-card{
+    background: var(--bg-white);
+    padding:40px;
+    border-radius:20px;
+    box-shadow: var(--shadow-soft);
+}
+
+
+/* =========================
+   HEADER AREA
+========================= */
+
+.appointment-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.step{
+    background: var(--bg-card);
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+    color: var(--primary-main);
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar{
+    height:6px;
+    background: #e3e8ea;
+    border-radius:10px;
+    margin:10px 0 20px 0;
+}
+
+.progress-fill{
+    height:6px;
+    background: var(--primary-main);
+    border-radius:10px;
+    width:100%;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.appointment-desc{
+    color: var(--text-medium);
+    margin-bottom:30px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:600;
+    color: var(--text-dark);
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #e3e8ea;
+    font-size:14px;
+    background: var(--bg-card);
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+/* HOVER + FOCUS */
+select:hover,
+textarea:hover{
+    border-color: var(--primary-main);
+}
+
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color: var(--primary-main);
+    box-shadow: 0 0 0 2px rgba(44,140,148,0.1);
+}
+
+textarea{
+    resize:none;
+}
+
+
+/* =========================
+   DATE + TIME LAYOUT
+========================= */
+
+.datetime-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+
+/* =========================
+   CALENDAR
+========================= */
+
+.calendar{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.calendar span{
+    padding:10px 14px;
+    background: var(--bg-card);
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+.calendar span:hover{
+    background: var(--primary-light);
+}
+
+.calendar .selected{
+    background: var(--primary-main);
+    color: white;
+}
+
+.calendar .disabled{
+    background:#eef1f2;
+    color:#aaa;
+    cursor:not-allowed;
+}
+
+
+/* =========================
+   TIME SLOTS
+========================= */
+
+.time-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:10px;
+}
+
+.time-slot{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #e3e8ea;
+    background: var(--bg-white);
+    cursor:pointer;
+    font-size:14px;
+    transition: 0.3s;
+}
+
+.time-slot:hover{
+    border-color: var(--primary-main);
+}
+
+.time-slot.active{
+    background: var(--primary-main);
+    color:white;
+    border:none;
+}
+
+.time-slot.disabled{
+    background:#eef1f2;
+    color:#aaa;
+    cursor:not-allowed;
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms{
+    margin:25px 0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14px;
+    color: var(--text-medium);
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.submit-btn{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    font-size:16px;
+}
+
+.back-link{
+    display:block;
+    text-align:center;
+    margin-top:12px;
+    font-size:14px;
+    color: var(--text-medium);
+    text-decoration:none;
+}
+
+.back-link:hover{
+    color: var(--primary-main);
+}

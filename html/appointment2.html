@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Book Appointment | HealViaUs</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/appointment2.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+    <header class="navbar">
+
+        <!-- LOGO (HOME LINK) -->
+        <a href="index.html" class="logo">
+            <img src="../images/logo.png" alt="HealViaUs Logo">
+            <span>HealViaUs</span>
+        </a>
+
+        <!-- NAV LINKS -->
+        <nav class="nav-links">
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- CTA BUTTON -->
+        <div class="nav-btn">
+            <a href="appointment.html" class="book-btn">
+                Book Appointment
+                <span class="material-icons icon-circle">event</span>
+            </a>
+        </div>
+
+    </header>
+
+
+<main class="booking-container">
+
+<div class="booking-card">
+
+<div class="appointment-header">
+
+<h2>Appointment Details</h2>
+<span class="step">Step 2 of 2</span>
+
+</div>
+
+<div class="progress-bar">
+<div class="progress-fill"></div>
+</div>
+
+<p class="appointment-desc">
+Finalize your booking information by selecting your provider and preferred time.
+</p>
+
+
+<form>
+<!-- SPECIALTY -->
+<div class="form-group">
+    <label for="category">Select Specialty</label>
+    <select id="category" onchange="filterDoctors()">
+        <option value="">Choose specialty</option>
+        <option value="cardio">Cardiologist</option>
+        <option value="dentist">Dentist</option>
+        <option value="pediatric">Pediatrician</option>
+        <option value="ortho">Orthopedic</option>
+        <option value="neuro">Neurologist</option>
+        <option value="general">General Physician</option>
+    </select>
+</div>
+
+<!-- DOCTOR -->
+<div class="form-group">
+    <label for="doctor">Select Doctor</label>
+    <select id="doctor">
+        <option>Select a doctor</option>
+    </select>
+</div>
+
+
+<div class="datetime-container">
+
+<div>
+
+<h4>Select Date</h4>
+
+<div class="calendar">
+
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span class="selected">5</span>
+<span>6</span>
+<span class="disabled">14</span>
+<span>16</span>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h4>Select Time Slot</h4>
+
+<div class="time-grid">
+
+<button type="button" class="time-slot">09:00 AM</button>
+<button type="button" class="time-slot">09:30 AM</button>
+<button type="button" class="time-slot active">10:00 AM</button>
+<button type="button" class="time-slot">10:30 AM</button>
+<button type="button" class="time-slot disabled">11:00 AM</button>
+<button type="button" class="time-slot">11:30 AM</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Reason for Visit</label>
+
+<textarea placeholder="Please describe any symptoms or concerns..."></textarea>
+
+</div>
+
+
+<div class="terms">
+
+<input type="checkbox">
+
+<label>I agree to the Terms of Service and Privacy Policy</label>
+
+</div>
+
+
+<button class="btn-primary submit-btn">
+Confirm Appointment
+</button>
+
+<a href="appointment1.html" class="back-link">
+Go Back to Provider Selection
+</a>
+
+</form>
+
+</div>
+
+</main>
+<script src="../javascript/appointment.js"></script>
+</body>
+</html>

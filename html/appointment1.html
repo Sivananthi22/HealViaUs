@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | HealViaUs</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/appointment1.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <!-- LOGO (HOME LINK) -->
+        <a href="index.html" class="logo">
+            <img src="../images/logo.png" alt="HealViaUs Logo">
+            <span>HealViaUs</span>
+        </a>
+
+        <!-- NAV LINKS -->
+        <nav class="nav-links">
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- CTA BUTTON -->
+        <div class="nav-btn">
+            <a href="appointment.html" class="book-btn">
+                Book Appointment
+                <span class="material-icons icon-circle">event</span>
+            </a>
+        </div>
+
+    </header>
+
+
+
+<!-- ================= MAIN ================= -->
+<main class="booking-container">
+
+    <div class="booking-card">
+
+        <h2>Book Your Appointment</h2>
+
+        <p class="booking-desc">
+            Please provide the patient's contact details to continue booking.
+        </p>
+
+        <!-- FORM -->
+        <form action="appointment2.html" method="get">
+
+            <!-- NAME -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined">person</span>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined">mail</span>
+                    <input type="email" id="email" name="email" placeholder="john@email.com" required>
+                </div>
+            </div>
+
+            <!-- PHONE -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined">call</span>
+                    <input type="tel" id="phone" name="phone" placeholder="0770000000" required>
+                </div>
+            </div>
+
+            <!-- DOB -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </div>
+
+            <!-- GENDER -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+
+            <!-- SUBMIT -->
+            <button type="submit" class="btn-primary submit-btn">
+                Continue to Step 2 →
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+</body>
+</html>
