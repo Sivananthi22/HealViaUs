@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clinic>
+
+    <doctors>
+
+        <!-- CARDIO -->
+        <doctor>
+            <name>Dr. Amina Rahman</name>
+            <category>cardio</category>
+            <specialty>Cardiologist</specialty>
+            <rating>4.8</rating>
+            <location>Colombo</location>
+            <description>Expert in heart care</description>
+            <image>../images/Dr. Amina Rahman.png</image>
+            <slots><time>09:00 AM</time><time>10:00 AM</time><time>11:00 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Daniel Foster</name>
+            <category>cardio</category>
+            <specialty>Cardiologist</specialty>
+            <rating>4.7</rating>
+            <location>Colombo</location>
+            <description>Heart disease prevention specialist</description>
+            <image>../images/Dr. Daniel Foster.png</image>
+            <slots><time>09:00 AM</time><time>10:00 AM</time><time>11:00 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Henry Collins</name>
+            <category>cardio</category>
+            <specialty>Cardiologist</specialty>
+            <rating>4.6</rating>
+            <location>Kandy</location>
+            <description>Cardiac diagnostics expert</description>
+            <image>../images/Dr. Henry Collins.png</image>
+            <slots><time>12:00 PM</time><time>01:00 PM</time><time>02:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. James Walker</name>
+            <category>cardio</category>
+            <specialty>Cardiologist</specialty>
+            <rating>4.8</rating>
+            <location>Galle</location>
+            <description>Interventional cardiologist</description>
+            <image>../images/Dr. James Walker.png</image>
+            <slots><time>02:00 PM</time><time>03:00 PM</time><time>04:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. William Turner</name>
+            <category>cardio</category>
+            <specialty>Cardiologist</specialty>
+            <rating>4.9</rating>
+            <location>Negombo</location>
+            <description>Heart rhythm specialist</description>
+            <image>../images/Dr. William Turner.png</image>
+            <slots><time>04:00 PM</time><time>05:00 PM</time><time>06:00 PM</time></slots>
+        </doctor>
+
+        <!-- DENTIST -->
+        <doctor>
+            <name>Dr. Amelia Brooks</name>
+            <category>dentist</category>
+            <specialty>Dentist</specialty>
+            <rating>4.8</rating>
+            <location>Colombo</location>
+            <description>Cosmetic dentistry expert</description>
+            <image>../images/Dr. Amelia Brooks.png</image>
+            <slots><time>09:30 AM</time><time>10:30 AM</time><time>11:30 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Charlotte Hayes</name>
+            <category>dentist</category>
+            <specialty>Dentist</specialty>
+            <rating>4.7</rating>
+            <location>Kandy</location>
+            <description>Restorative dentistry expert</description>
+            <image>../images/Dr. Charlotte Hayes.png</image>
+            <slots><time>12:30 PM</time><time>01:30 PM</time><time>02:30 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Olivia Bennett</name>
+            <category>dentist</category>
+            <specialty>Dentist</specialty>
+            <rating>4.9</rating>
+            <location>Galle</location>
+            <description>Pediatric dentist</description>
+            <image>../images/Dr. Olivia Bennett.png</image>
+            <slots><time>02:00 PM</time><time>03:00 PM</time><time>04:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Oliver Scott</name>
+            <category>dentist</category>
+            <specialty>Dentist</specialty>
+            <rating>4.6</rating>
+            <location>Negombo</location>
+            <description>Oral surgery specialist</description>
+            <image>../images/Dr. Oliver Scott.png</image>
+            <slots><time>04:00 PM</time><time>05:00 PM</time><time>06:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Kavitha Rajan</name>
+            <category>dentist</category>
+            <specialty>Dentist</specialty>
+            <rating>4.8</rating>
+            <location>Jaffna</location>
+            <description>Comprehensive dental care</description>
+            <image>../images/Dr. Kavitha Rajan.png</image>
+            <slots><time>08:00 AM</time><time>09:00 AM</time><time>10:00 AM</time></slots>
+        </doctor>
+
+        <!-- PEDIATRIC -->
+        <doctor>
+            <name>Dr. Ishara Jayasinghe</name>
+            <category>pediatric</category>
+            <specialty>Pediatrician</specialty>
+            <rating>4.9</rating>
+            <location>Colombo</location>
+            <description>Child health expert</description>
+            <image>../images/Dr. Ishara Jayasinghe.png</image>
+            <slots><time>08:30 AM</time><time>09:30 AM</time><time>10:30 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Anjali Sharma</name>
+            <category>pediatric</category>
+            <specialty>Pediatrician</specialty>
+            <rating>4.7</rating>
+            <location>Kandy</location>
+            <description>Child growth specialist</description>
+            <image>../images/Dr. Anjali Sharma.png</image>
+            <slots><time>11:00 AM</time><time>12:00 PM</time><time>01:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Nivetha Kumar</name>
+            <category>pediatric</category>
+            <specialty>Pediatrician</specialty>
+            <rating>4.8</rating>
+            <location>Jaffna</location>
+            <description>Pediatric nutrition expert</description>
+            <image>../images/Dr. Nivetha Kumar.png</image>
+            <slots><time>02:30 PM</time><time>03:30 PM</time><time>04:30 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Tharushi Silva</name>
+            <category>pediatric</category>
+            <specialty>Pediatrician</specialty>
+            <rating>4.6</rating>
+            <location>Galle</location>
+            <description>Child wellness specialist</description>
+            <image>../images/Dr. Tharushi Silva.png</image>
+            <slots><time>09:00 AM</time><time>10:00 AM</time><time>11:00 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Sanduni Perera</name>
+            <category>pediatric</category>
+            <specialty>Pediatrician</specialty>
+            <rating>4.8</rating>
+            <location>Negombo</location>
+            <description>Immunization specialist</description>
+            <image>../images/Dr. Sanduni Perera.png</image>
+            <slots><time>03:00 PM</time><time>04:00 PM</time><time>05:00 PM</time></slots>
+        </doctor>
+
+        <!-- ORTHO -->
+        <doctor>
+            <name>Dr. Kasun Perera</name>
+            <category>ortho</category>
+            <specialty>Orthopedic Specialist</specialty>
+            <rating>4.8</rating>
+            <location>Colombo</location>
+            <description>Bone and joint specialist</description>
+            <image>../images/Dr. Kasun Perera.png</image>
+            <slots><time>09:00 AM</time><time>10:00 AM</time><time>11:00 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Suresh Kumar</name>
+            <category>ortho</category>
+            <specialty>Orthopedic Specialist</specialty>
+            <rating>4.7</rating>
+            <location>Kandy</location>
+            <description>Fracture management expert</description>
+            <image>../images/Dr. Suresh Kumar.png</image>
+            <slots><time>12:00 PM</time><time>01:00 PM</time><time>02:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Ravi Chandran</name>
+            <category>ortho</category>
+            <specialty>Orthopedic Specialist</specialty>
+            <rating>4.6</rating>
+            <location>Jaffna</location>
+            <description>Joint replacement specialist</description>
+            <image>../images/Dr. Ravi Chandran.png</image>
+            <slots><time>02:00 PM</time><time>03:00 PM</time><time>04:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Tharindu Jayawardena</name>
+            <category>ortho</category>
+            <specialty>Orthopedic Specialist</specialty>
+            <rating>4.9</rating>
+            <location>Galle</location>
+            <description>Spinal disorder expert</description>
+            <image>../images/Dr. Tharindu Jayawardena.png</image>
+            <slots><time>04:00 PM</time><time>05:00 PM</time><time>06:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Niroshan Silva</name>
+            <category>ortho</category>
+            <specialty>Orthopedic Specialist</specialty>
+            <rating>4.7</rating>
+            <location>Negombo</location>
+            <description>Musculoskeletal specialist</description>
+            <image>../images/Dr. Niroshan Silva.png</image>
+            <slots><time>08:00 AM</time><time>09:00 AM</time><time>10:00 AM</time></slots>
+        </doctor>
+
+        <!-- NEURO -->
+        <doctor>
+            <name>Dr. Ayesha Khan</name>
+            <category>neuro</category>
+            <specialty>Neurologist</specialty>
+            <rating>4.9</rating>
+            <location>Colombo</location>
+            <description>Neurological disorder expert</description>
+            <image>../images/Dr. Ayesha Khan.png</image>
+            <slots><time>09:00 AM</time><time>10:00 AM</time><time>11:00 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Fatima Zahra</name>
+            <category>neuro</category>
+            <specialty>Neurologist</specialty>
+            <rating>4.8</rating>
+            <location>Kandy</location>
+            <description>Migraine and epilepsy specialist</description>
+            <image>../images/Dr. Fatima Zahra.png</image>
+            <slots><time>11:00 AM</time><time>12:00 PM</time><time>01:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Zainab Ali</name>
+            <category>neuro</category>
+            <specialty>Neurologist</specialty>
+            <rating>4.7</rating>
+            <location>Galle</location>
+            <description>Cognitive disorder specialist</description>
+            <image>../images/Dr. Zainab Ali.png</image>
+            <slots><time>02:00 PM</time><time>03:00 PM</time><time>04:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Maryam Hassan</name>
+            <category>neuro</category>
+            <specialty>Neurologist</specialty>
+            <rating>4.8</rating>
+            <location>Negombo</location>
+            <description>Neurology diagnosis expert</description>
+            <image>../images/Dr. Maryam Hassan.png</image>
+            <slots><time>04:00 PM</time><time>05:00 PM</time><time>06:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Li Xiaoyan</name>
+            <category>neuro</category>
+            <specialty>Neurologist</specialty>
+            <rating>4.9</rating>
+            <location>Colombo</location>
+            <description>Stroke rehabilitation expert</description>
+            <image>../images/Dr. Li Xiaoyan.png</image>
+            <slots><time>08:30 AM</time><time>09:30 AM</time><time>10:30 AM</time></slots>
+        </doctor>
+
+        <!-- GENERAL -->
+        <doctor>
+            <name>Dr. Emily Carter</name>
+            <category>general</category>
+            <specialty>General Physician</specialty>
+            <rating>4.8</rating>
+            <location>Colombo</location>
+            <description>Primary healthcare specialist</description>
+            <image>../images/Dr. Emily Carter.png</image>
+            <slots><time>09:00 AM</time><time>10:00 AM</time><time>11:00 AM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Dilani Fernando</name>
+            <category>general</category>
+            <specialty>General Physician</specialty>
+            <rating>4.7</rating>
+            <location>Galle</location>
+            <description>General diagnosis expert</description>
+            <image>../images/Dr. Dilani Fernando.png</image>
+            <slots><time>12:00 PM</time><time>01:00 PM</time><time>02:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Dharshini Suresh</name>
+            <category>general</category>
+            <specialty>General Physician</specialty>
+            <rating>4.6</rating>
+            <location>Jaffna</location>
+            <description>Preventive healthcare expert</description>
+            <image>../images/Dr. Dharshini Suresh.png</image>
+            <slots><time>02:00 PM</time><time>03:00 PM</time><time>04:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Anjali Subramaniam</name>
+            <category>general</category>
+            <specialty>General Physician</specialty>
+            <rating>4.8</rating>
+            <location>Kandy</location>
+            <description>Family medicine specialist</description>
+            <image>../images/Dr. Anjali Subramaniam.png</image>
+            <slots><time>04:00 PM</time><time>05:00 PM</time><time>06:00 PM</time></slots>
+        </doctor>
+
+        <doctor>
+            <name>Dr. Hannah Clarke</name>
+            <category>general</category>
+            <specialty>General Physician</specialty>
+            <rating>4.7</rating>
+            <location>Negombo</location>
+            <description>Patient-centered healthcare provider</description>
+            <image>../images/Dr. Hannah Clarke.png</image>
+            <slots><time>08:00 AM</time><time>09:00 AM</time><time>10:00 AM</time></slots>
+        </doctor>
+
+    </doctors>
+
+</clinic>

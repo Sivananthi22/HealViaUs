@@ -23,7 +23,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--bg-light);
+    background: linear-gradient(
+        215deg,
+        #f8fbfb,
+        #eef7f8,
+        #e4f3f5,
+        var(--primary-light) /* subtle blend */
+    );
 }
 .navbar {
     display: grid;
@@ -126,7 +132,7 @@ body {
 
 .booking-container{
     max-width:900px;
-    margin:80px auto;
+    margin:20px auto;
     padding:20px;
 }
 
@@ -140,6 +146,13 @@ body {
     padding:40px;
     border-radius:20px;
     box-shadow: var(--shadow-soft);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
 
@@ -168,18 +181,41 @@ body {
    PROGRESS BAR
 ========================= */
 
-.progress-bar{
-    height:6px;
-    background: #e3e8ea;
-    border-radius:10px;
-    margin:10px 0 20px 0;
+/* CONTAINER */
+.progress-container {
+    margin-bottom: 25px;
 }
 
-.progress-fill{
-    height:6px;
-    background: var(--primary-main);
-    border-radius:10px;
-    width:100%;
+/* HEADER TEXT */
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-medium);
+    margin-bottom: 8px;
+}
+
+/* BAR BACKGROUND */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e6f0f2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* PROGRESS FILL */
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+
+/* STEP 2 */
+.progress-fill.step2 {
+    width: 100%;
+    background: linear-gradient(to right, #74c0fc, var(--primary-main));
 }
 
 
@@ -348,22 +384,165 @@ textarea{
    BUTTONS
 ========================= */
 
-.submit-btn{
-    width:100%;
-    padding:14px;
-    margin-top:10px;
-    font-size:16px;
+
+/* BUTTON CONTAINER */
+.form-actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
 }
 
-.back-link{
-    display:block;
-    text-align:center;
-    margin-top:12px;
-    font-size:14px;
-    color: var(--text-medium);
-    text-decoration:none;
-}
-
-.back-link:hover{
+/* BACK BUTTON */
+.back-link {
+    background: var(--bg-white);
     color: var(--primary-main);
+
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: 1px solid var(--primary-main);
+
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+
+/* BACK HOVER */
+.back-link:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    background: var(--primary-main);
+    color: var(--text-light);
+
+    padding: 12px 28px;
+    border-radius: 25px;
+    border: none;
+
+    cursor: pointer;
+    font-weight: 600;
+
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+
+/* SUBMIT HOVER */
+.submit-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* CLICK EFFECT (VERY NICE UX 👀) */
+.submit-btn:active,
+.back-link:active {
+    transform: scale(0.96);
+}
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--primary-dark);
+    color: var(--text-light);
+    padding: 50px 80px 20px;
+}
+
+/* BRAND COLUMN */
+.footer-brand {
+    max-width: 260px;
+}
+
+/* LOGO IN FOOTER */
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* IMAGE */
+.footer-logo img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    background: white;       /* 👈 makes it pop */
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* TEXT */
+.footer-logo h3 {
+    margin: 0;
+    font-size: 20px;
+    color: var(--text-light);
+}
+
+/* CONTAINER */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* COLUMN */
+.footer-col h3,
+.footer-col h4 {
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #d9f0f2;
+}
+
+/* LINKS */
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #d9f0f2;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+/* ICONS */
+.footer-col .material-icons {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 15px;
+    font-size: 14px;
+}
+.footer-col:not(.footer-brand) {
+    margin-top: 60px; /* 👈 adjust (20–50px as you like) */
 }

@@ -1,0 +1,87 @@
+<services>
+
+    <!-- CARDIO -->
+    <service>
+        <category>cardio</category>
+        <name>Cardiology</name>
+        <items>
+            <item>Bypass Surgery</item>
+            <item>ECG Monitoring</item>
+            <item>Heart Transplant</item>
+            <item>Angioplasty</item>
+            <item>Cardiac Rehabilitation</item>
+            <item>Blood Pressure Management</item>
+        </items>
+    </service>
+
+    <!-- DENTIST -->
+    <service>
+        <category>dentist</category>
+        <name>Dentistry</name>
+        <items>
+            <item>Teeth Cleaning</item>
+            <item>Root Canal Treatment</item>
+            <item>Braces and Orthodontics</item>
+            <item>Dental Implants</item>
+            <item>Tooth Extraction</item>
+            <item>Cosmetic Dentistry</item>
+        </items>
+    </service>
+
+    <!-- PEDIATRIC -->
+    <service>
+        <category>pediatric</category>
+        <name>Pediatrics</name>
+        <items>
+            <item>Vaccination Programs</item>
+            <item>Child Health Checkups</item>
+            <item>Growth Monitoring</item>
+            <item>Nutrition Guidance</item>
+            <item>Newborn Care</item>
+            <item>Childhood Illness Treatment</item>
+        </items>
+    </service>
+
+    <!-- ORTHOPEDIC -->
+    <service>
+        <category>ortho</category>
+        <name>Orthopedic</name>
+        <items>
+            <item>Fracture Treatment</item>
+            <item>Joint Replacement Surgery</item>
+            <item>Arthroscopy</item>
+            <item>Spine Care</item>
+            <item>Sports Injury Treatment</item>
+            <item>Physiotherapy Support</item>
+        </items>
+    </service>
+
+    <!-- NEUROLOGY -->
+    <service>
+        <category>neuro</category>
+        <name>Neurology</name>
+        <items>
+            <item>Stroke Management</item>
+            <item>Epilepsy Treatment</item>
+            <item>Migraine Care</item>
+            <item>Brain Imaging Analysis</item>
+            <item>Neuro Rehabilitation</item>
+            <item>Parkinson’s Disease Care</item>
+        </items>
+    </service>
+
+    <!-- GENERAL -->
+    <service>
+        <category>general</category>
+        <name>General Medicine</name>
+        <items>
+            <item>General Health Checkups</item>
+            <item>Fever and Infection Treatment</item>
+            <item>Chronic Disease Management</item>
+            <item>Preventive Healthcare</item>
+            <item>Routine Screenings</item>
+            <item>Primary Consultation Services</item>
+        </items>
+    </service>
+
+</services>

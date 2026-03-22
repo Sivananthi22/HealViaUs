@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/services.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="../images/logo.png" alt="HealViaUs Logo">
+            <span>HealViaUs</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="services.html" class="active">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="appointment1.html">Appointment</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-btn">
+            <a href="appointment1.html" class="book-btn">
+                Book Appointment
+                <span class="material-icons icon-circle">event</span>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- HEADER -->
+    <section class="services-header">
+        <h1>Search for your Doctor</h1>
+        <p>Find the right specialist for your healthcare needs</p>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="services-container">
+
+        <!-- CARDIO -->
+        <div class="service-card">
+            <img src="../images/cardiology.png" alt="Cardiology">
+            <div class="card-content">
+                <h3>Cardiology</h3>
+                <p>Heart care, bypass surgery, ECG and more</p>
+                <button onclick="filterDoctors('cardio')" class="service-action-btn">
+                    View Services
+                </button>
+            </div>
+        </div>
+
+        <!-- DENTIST -->
+        <div class="service-card">
+            <img src="../images/dentist.png" alt="Dentistry">
+            <div class="card-content">
+                <h3>Dentistry</h3>
+                <p>Teeth cleaning, braces, root canal</p>
+                <button onclick="filterDoctors('dentist')" class="service-action-btn">
+                    View Services
+                </button>
+            </div>
+        </div>
+
+        <!-- PEDIATRIC -->
+        <div class="service-card">
+            <img src="../images/pediatric.png" alt="Pediatrics">
+            <div class="card-content">
+                <h3>Pediatrics</h3>
+                <p>Child health, vaccines, nutrition care</p>
+                <button onclick="filterDoctors('pediatric')" class="service-action-btn">
+                    View Services
+                </button>
+            </div>
+        </div>
+
+        <!-- ORTHO -->
+        <div class="service-card">
+            <img src="../images/ortho.png" alt="Orthopedic">
+            <div class="card-content">
+                <h3>Orthopedic</h3>
+                <p>Bone care, fractures, joint replacement</p>
+                <button onclick="filterDoctors('ortho')" class="service-action-btn">
+                    View Services
+                </button>
+            </div>
+        </div>
+
+        <!-- NEURO -->
+        <div class="service-card">
+            <img src="../images/neuro.png" alt="Neurology">
+            <div class="card-content">
+                <h3>Neurology</h3>
+                <p>Brain care, stroke treatment, epilepsy</p>
+                <button onclick="filterDoctors('neuro')" class="service-action-btn">
+                    View Services
+                </button>
+            </div>
+        </div>
+
+        <!-- GENERAL -->
+        <div class="service-card">
+            <img src="../images/general.png" alt="General">
+            <div class="card-content">
+                <h3>General</h3>
+                <p>Primary care, checkups, general treatment</p>
+                <button onclick="filterDoctors('general')" class="service-action-btn">
+                    View Services
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SERVICE DETAILS -->
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+
+            <h2 id="popup-title"></h2>
+            <div id="popup-body"></div>
+
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="../javascript/services.js"></script>
+<footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- LOGO + ABOUT -->
+                <div class="footer-col footer-brand">
+
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="HealViaUs Logo">
+                        <h3>HealViaUs</h3>
+                    </div>
+
+                    <p>
+                        Your trusted healthcare platform connecting you with the best doctors and services.
+                    </p>
+
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- SERVICES -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Cardiology</li>
+                        <li>Dentistry</li>
+                        <li>Pediatrics</li>
+                        <li>Orthopedic</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><span class="material-icons">location_on</span> Colombo, Sri Lanka</p>
+                    <p><span class="material-icons">call</span> +94 77 123 4567</p>
+                    <p><span class="material-icons">email</span> info@healviaus.com</p>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+                <p>© 2026 HealViaUs. All rights reserved.</p>
+            </div>
+
+        </footer>
+</body>
+
+</html>

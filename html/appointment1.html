@@ -7,7 +7,8 @@
     <title>Book Appointment | HealViaUs</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -31,13 +32,13 @@
         <nav class="nav-links">
             <a href="services.html">Services</a>
             <a href="doctors.html">Doctors</a>
-            <a href="appointment.html">Appointment</a>
+            <a href="appointment1.html">Appointment</a>
             <a href="contact.html">Contact</a>
         </nav>
 
         <!-- CTA BUTTON -->
         <div class="nav-btn">
-            <a href="appointment.html" class="book-btn">
+            <a href="appointment1.html" class="book-btn">
                 Book Appointment
                 <span class="material-icons icon-circle">event</span>
             </a>
@@ -47,76 +48,150 @@
 
 
 
-<!-- ================= MAIN ================= -->
-<main class="booking-container">
+    <!-- ================= MAIN ================= -->
+    <main class="booking-container">
 
-    <div class="booking-card">
+        <div class="booking-card">
+            <div class="progress-container">
 
-        <h2>Book Your Appointment</h2>
-
-        <p class="booking-desc">
-            Please provide the patient's contact details to continue booking.
-        </p>
-
-        <!-- FORM -->
-        <form action="appointment2.html" method="get">
-
-            <!-- NAME -->
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <div class="input-icon">
-                    <span class="material-symbols-outlined">person</span>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <div class="progress-header">
+                    <span>Step 1 of 2</span>
+                    <span>50%</span>
                 </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill step1"></div>
+                </div>
+
             </div>
 
-            <!-- EMAIL -->
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <div class="input-icon">
-                    <span class="material-symbols-outlined">mail</span>
-                    <input type="email" id="email" name="email" placeholder="john@email.com" required>
+            <h2>Book Your Appointment</h2>
+
+            <p class="booking-desc">
+                Please provide the patient's contact details to continue booking.
+            </p>
+
+            <!-- FORM -->
+            <form action="appointment2.html" method="get" onsubmit="return validateStep1()" novalidate>
+
+                <!-- NAME -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <div class="input-icon">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" id="name" name="name" placeholder="Please enter your name here ..." required>
+                        <small class="error" id="nameError"></small>
+                    </div>
                 </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-icon">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        <small class="error" id="emailError"></small>
+                    </div>
+                </div>
+
+                <!-- PHONE -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-icon">
+                        <span class="material-symbols-outlined">call</span>
+                        <input type="tel" id="phone" name="phone" placeholder="0700000000" required>
+                        <small class="error" id="phoneError"></small>
+                    </div>
+                </div>
+
+                <!-- DOB -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <div class="input-icon">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        <input type="date" id="dob" name="dob">
+                        <small class="error" id="dobError"></small>
+                    </div>
+                </div>
+
+                <!-- GENDER -->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                        <small class="error" id="genderError"></small>
+                    </div>
+                </div>
+
+                <!-- SUBMIT -->
+                <button type="submit" class="btn-primary submit-btn">
+                    Continue to Step 2 →
+                </button>
+
+            </form>
+
+        </div>
+
+        <script src="../javascript/appointment1.js"></script>
+    </main>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LOGO + ABOUT -->
+            <div class="footer-col footer-brand">
+
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="HealViaUs Logo">
+                    <h3>HealViaUs</h3>
+                </div>
+
+                <p>
+                    Your trusted healthcare platform connecting you with the best doctors and services.
+                </p>
+
             </div>
 
-            <!-- PHONE -->
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <div class="input-icon">
-                    <span class="material-symbols-outlined">call</span>
-                    <input type="tel" id="phone" name="phone" placeholder="0770000000" required>
-                </div>
+            <!-- QUICK LINKS -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
 
-            <!-- DOB -->
-            <div class="form-group">
-                <label for="dob">Date of Birth</label>
-                <div class="input-icon">
-                    <span class="material-symbols-outlined">calendar_month</span>
-                    <input type="date" id="dob" name="dob">
-                </div>
+            <!-- SERVICES -->
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li>Cardiology</li>
+                    <li>Dentistry</li>
+                    <li>Pediatrics</li>
+                    <li>Orthopedic</li>
+                </ul>
             </div>
 
-            <!-- GENDER -->
-            <div class="form-group">
-                <label>Gender</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                    <label><input type="radio" name="gender" value="other"> Other</label>
-                </div>
+            <!-- CONTACT -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><span class="material-icons">location_on</span> Colombo, Sri Lanka</p>
+                <p><span class="material-icons">call</span> +94 77 123 4567</p>
+                <p><span class="material-icons">email</span> info@healviaus.com</p>
             </div>
 
-            <!-- SUBMIT -->
-            <button type="submit" class="btn-primary submit-btn">
-                Continue to Step 2 →
-            </button>
+        </div>
 
-        </form>
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            <p>© 2026 HealViaUs. All rights reserved.</p>
+        </div>
 
-    </div>
-
-</main>
-
+    </footer>
 </body>
+
 </html>

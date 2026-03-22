@@ -3,17 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctors | HealViaUs</title>
+    <title>Contact | HealViaUs</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/doctors.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
@@ -45,55 +43,70 @@
 
     </header>
 
+    <section class="contact-hero">
 
-    <!-- MAIN SECTION -->
-    <section class="doctors-page">
-
-        <!-- LEFT FILTER -->
-        <aside class="filters">
-
-            <h3>Filters</h3>
-
-            <!-- SPECIALTY -->
-            <p class="filter-title">Specialty</p>
-            <label><input type="checkbox" value="cardio" onchange="applyFilter()"> Cardiologist</label>
-            <label><input type="checkbox" value="dentist" onchange="applyFilter()"> Dentist</label>
-            <label><input type="checkbox" value="pediatric" onchange="applyFilter()"> Pediatrician</label>
-            <label><input type="checkbox" value="ortho" onchange="applyFilter()"> Orthopedic</label>
-            <label><input type="checkbox" value="neuro" onchange="applyFilter()"> Neurologist</label>
-            <label><input type="checkbox" value="general" onchange="applyFilter()"> General</label>
-
-
-            <!-- RATING -->
-            <p class="filter-title">Rating</p>
-            <label><input type="checkbox" value="4.5" onchange="applyFilter()"> 4.5+ <span
-                    class="material-icons icon">star</span></label>
-            <label><input type="checkbox" value="4.8" onchange="applyFilter()"> 4.8+ <span
-                    class="material-icons icon">star</span></label>
-
-
-            <!-- LOCATION -->
-            <p class="filter-title">Location</p>
-            <label><input type="checkbox" value="Colombo" onchange="applyFilter()"> Colombo</label>
-            <label><input type="checkbox" value="Kandy" onchange="applyFilter()"> Kandy</label>
-            <label><input type="checkbox" value="Galle" onchange="applyFilter()"> Galle</label>
-            <label><input type="checkbox" value="Jaffna" onchange="applyFilter()"> Jaffna</label>
-            <label><input type="checkbox" value="Negombo" onchange="applyFilter()"> Negombo</label>
-
-        </aside>
-
-
-        <!-- RIGHT CONTENT -->
-        <div class="doctor-content">
-
-            <h2>Our Doctors</h2>
-
-            <div id="doctor-list" class="doctor-grid"></div>
-            <!-- JS will load doctors here -->
-
+        <!-- LEFT IMAGE -->
+        <div class="contact-image">
+            <img src="../images/contact.png" alt="Contact">
         </div>
 
+        <!-- RIGHT CONTENT -->
+        <div class="contact-box">
+
+            <h2 class="contact-title">
+                <span class="material-icons title-icon">waving_hand</span>
+                Let’s Talk
+            </h2>
+            <p>Have questions? We’re here to help you anytime.</p>
+
+            <form id="contactForm" novalidate>
+
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea required></textarea>
+                    <label>Your Message</label>
+                </div>
+
+                <button type="submit" class="contact-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+            <!-- CONTACT DETAILS -->
+            <div class="contact-details">
+
+                <div class="detail-item">
+                    <span class="material-icons">location_on</span>
+                    <p>Colombo, Sri Lanka</p>
+                </div>
+
+                <div class="detail-item">
+                    <span class="material-icons">call</span>
+                    <p>+94 77 123 4567</p>
+                </div>
+
+                <div class="detail-item">
+                    <span class="material-icons">email</span>
+                    <p>info@healviaus.com</p>
+                </div>
+
+            </div>
+
+        </div>
+        
+
     </section>
+
     <footer class="footer">
 
             <div class="footer-container">
@@ -151,10 +164,7 @@
 
         </footer>
 
-
-    <!-- JS -->
-    <!-- <script src="../javascript/data.js"></script> -->
-    <script src="../javascript/doctors.js"></script>
+    <script src="../javascript/contact.js"></script>
 
 </body>
 

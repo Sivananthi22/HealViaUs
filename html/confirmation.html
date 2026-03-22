@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Appointment Confirmed | HealViaUs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+.confirm-box {
+    max-width: 600px;
+    margin: 120px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.confirm-box h2 {
+    color: var(--primary-main);
+    margin-bottom: 10px;
+}
+
+.confirm-details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.confirm-details p {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.success {
+    font-size: 50px;
+    color: var(--primary-main);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="confirm-box">
+
+    <div class="success">✔</div>
+
+    <h2>Appointment Confirmed!</h2>
+    <p>Your booking has been successfully completed.</p>
+
+    <div class="confirm-details" id="details"></div>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+let name = params.get("name");
+let email = params.get("email");
+let phone = params.get("phone");
+let doctor = params.get("doctor");
+let category = params.get("category");
+let reason = params.get("reason");
+
+// 👇 date + time (from selections)
+let date = document.querySelector(".calendar span.selected")?.textContent || "Selected date";
+let time = document.querySelector(".time-slot.active")?.textContent || "Selected time";
+
+document.getElementById("details").innerHTML = `
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
+    <p><strong>Doctor:</strong> ${doctor}</p>
+    <p><strong>Specialty:</strong> ${category}</p>
+    <p><strong>Date:</strong> ${date}</p>
+    <p><strong>Time:</strong> ${time}</p>
+    <p><strong>Reason:</strong> ${reason}</p>
+`;
+
+</script>
+
+</body>
+</html>
